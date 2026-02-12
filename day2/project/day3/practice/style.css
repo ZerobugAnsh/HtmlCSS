@@ -113,9 +113,28 @@ header ul li a:hover {
     .width-box {
         width: 100%;
     }
+    .nav a{
+        padding: 5px;
+        background-color: yellow;
+        color: black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    nav{
+        margin-top: 10px;
+
+    }
+    .gallery{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
-/* Display Section */
+
 .display {
     padding: 30px;
 }
@@ -134,7 +153,7 @@ header ul li a:hover {
     margin-top: 10px;
 }
 
-/* Position Section */
+
 .position-section {
     padding: 30px;
 }
@@ -155,7 +174,7 @@ header ul li a:hover {
     padding: 5px 10px;
 }
 
-/* Flexbox Section */
+
 .flexbox {
     padding: 30px;
 }
@@ -163,6 +182,7 @@ header ul li a:hover {
 .flex-container {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .flex-item {
@@ -171,6 +191,7 @@ header ul li a:hover {
     padding: 20px;
     color: white;
     text-align: center;
+
 }
 
 /* Grid Section */
@@ -182,6 +203,7 @@ header ul li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    
 }
 
 .grid-item {
@@ -189,4 +211,71 @@ header ul li a:hover {
     padding: 30px;
     text-align: center;
     font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 350px;
+    margin: 40px auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+th {
+    background-color: #e6e6e6;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-heading {
+    background-color: #cfe2ff;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #d9d9d9;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0c0c0;
+}
+input ::placeholder{
+    text-decoration:dashed;
+    padding: 0 1px;
+    background-color: #d9d9d9;
+
 }
